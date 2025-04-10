@@ -1,0 +1,25 @@
+name: 📅 Daily DevOps Folder
+
+on:
+  schedule:
+    - cron: '0 4 * * *'  # Runs every day at 04:00 UTC
+  workflow_dispatch:
+
+jobs:
+  create-folder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v3
+
+      - name: 📁 Create daily folder
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          mkdir -p "$DATE"
+          echo "# DevOps Daily Log — $DATE" > "$DATE/notes.md"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$DATE"
+          git commit -m "📅 Auto-create daily folder: $DATE"
+          git push
