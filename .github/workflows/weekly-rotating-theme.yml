@@ -1,0 +1,66 @@
+name: 🗓️ Weekly Rotating DevOps Theme
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'  # Every Monday at 04:00 UTC
+  workflow_dispatch:
+
+jobs:
+  create-weekly-theme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v3
+
+      - name: 🧠 Create weekly DevOps plan based on rotating themes
+        run: |
+          WEEK=$(date +%V)
+          YEAR=$(date +%Y)
+          DIR="week-${WEEK}"
+
+          THEMES=("Bash & Scripting" "Docker & Containers" "GitHub Actions" "Monitoring & Logs" "Infra as Code (IaC)" "Kubernetes Basics")
+
+          # Calculate index from week number
+          INDEX=$((WEEK % ${#THEMES[@]}))
+          FOCUS="${THEMES[INDEX]}"
+
+          mkdir -p "$DIR"
+
+          echo "# 📅 Week ${WEEK} DevOps Plan" > "$DIR/plan.md"
+          echo "" >> "$DIR/plan.md"
+          echo "## 🎯 Focus Area: $FOCUS" >> "$DIR/plan.md"
+          echo "" >> "$DIR/plan.md"
+
+          if [ "$FOCUS" = "Bash & Scripting" ]; then
+            echo "- ✅ Write scripts to automate daily tasks" >> "$DIR/plan.md"
+            echo "- ✅ Use cron jobs for scheduled execution" >> "$DIR/plan.md"
+            echo "- ✅ Parse logs and files with grep/sed/awk" >> "$DIR/plan.md"
+          elif [ "$FOCUS" = "Docker & Containers" ]; then
+            echo "- ✅ Build and run Docker images" >> "$DIR/plan.md"
+            echo "- ✅ Use docker-compose for multi-service apps" >> "$DIR/plan.md"
+            echo "- ✅ Push an image to Docker Hub" >> "$DIR/plan.md"
+          elif [ "$FOCUS" = "GitHub Actions" ]; then
+            echo "- ✅ Create a CI pipeline" >> "$DIR/plan.md"
+            echo "- ✅ Trigger on push and pull_request" >> "$DIR/plan.md"
+            echo "- ✅ Use matrix builds" >> "$DIR/plan.md"
+          elif [ "$FOCUS" = "Monitoring & Logs" ]; then
+            echo "- ✅ Explore Prometheus + Grafana basics" >> "$DIR/plan.md"
+            echo "- ✅ Try Loki or ELK stack locally" >> "$DIR/plan.md"
+          elif [ "$FOCUS" = "Infra as Code (IaC)" ]; then
+            echo "- ✅ Learn Terraform basics" >> "$DIR/plan.md"
+            echo "- ✅ Write infrastructure definitions for cloud VMs" >> "$DIR/plan.md"
+          elif [ "$FOCUS" = "Kubernetes Basics" ]; then
+            echo "- ✅ Deploy to Minikube" >> "$DIR/plan.md"
+            echo "- ✅ Write a Helm chart" >> "$DIR/plan.md"
+            echo "- ✅ Use kubectl to manage pods" >> "$DIR/plan.md"
+          fi
+
+          echo "" >> "$DIR/plan.md"
+          echo "_Auto-generated on $(date)_ with rotating themes." >> "$DIR/plan.md"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$DIR"
+          git commit -m "🗓️ Week ${WEEK}: Rotating DevOps Plan — $FOCUS"
+          git push
