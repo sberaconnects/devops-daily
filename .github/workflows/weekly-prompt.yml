@@ -19,19 +19,19 @@ jobs:
           YEAR=$(date +%Y)
           DIR="week-${WEEK}"
           mkdir -p "$DIR"
-          cat <<EOF > "$DIR/plan.md"
-# 📅 Week ${WEEK} DevOps Plan
 
-## 🎯 Focus Area: GitHub Actions Mastery
+          echo "# 📅 Week ${WEEK} DevOps Plan" > "$DIR/plan.md"
+          echo "" >> "$DIR/plan.md"
+          echo "## 🎯 Focus Area: GitHub Actions Mastery" >> "$DIR/plan.md"
+          echo "" >> "$DIR/plan.md"
+          echo "- ✅ Learn to trigger workflows from PRs" >> "$DIR/plan.md"
+          echo "- ✅ Create a CI pipeline for Docker builds" >> "$DIR/plan.md"
+          echo "- ✅ Use matrix builds to test multiple Python versions" >> "$DIR/plan.md"
+          echo "- ✅ Store secrets using GitHub’s encrypted secrets" >> "$DIR/plan.md"
+          echo "- ✅ Deploy a Docker image from CI to Docker Hub" >> "$DIR/plan.md"
+          echo "" >> "$DIR/plan.md"
+          echo "_This file was auto-generated on $(date)_" >> "$DIR/plan.md"
 
-- ✅ Learn to trigger workflows from PRs
-- ✅ Create a CI pipeline for Docker builds
-- ✅ Use matrix builds to test multiple Python versions
-- ✅ Store secrets using GitHub’s encrypted secrets
-- ✅ Deploy a Docker image from CI to Docker Hub
-
-_This file was auto-generated on $(date)_
-EOF
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add "$DIR"
