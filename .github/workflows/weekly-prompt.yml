@@ -1,0 +1,39 @@
+name: 🗓️ Weekly DevOps Prompt
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'  # Every Monday at 04:00 UTC
+  workflow_dispatch:
+
+jobs:
+  create-weekly-task:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v3
+
+      - name: 📁 Create weekly task prompt folder
+        run: |
+          WEEK=$(date +%V)
+          YEAR=$(date +%Y)
+          DIR="week-${WEEK}"
+          mkdir -p "$DIR"
+          cat <<EOF > "$DIR/plan.md"
+# 📅 Week ${WEEK} DevOps Plan
+
+## 🎯 Focus Area: GitHub Actions Mastery
+
+- ✅ Learn to trigger workflows from PRs
+- ✅ Create a CI pipeline for Docker builds
+- ✅ Use matrix builds to test multiple Python versions
+- ✅ Store secrets using GitHub’s encrypted secrets
+- ✅ Deploy a Docker image from CI to Docker Hub
+
+_This file was auto-generated on $(date)_
+EOF
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$DIR"
+          git commit -m "🗓️ Auto-generate weekly DevOps plan: Week ${WEEK}"
+          git push
