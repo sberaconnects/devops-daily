@@ -1,16 +1,9 @@
 
-
+![Daily Folder](https://github.com/sberaconnects/devops-daily/actions/workflows/daily-folder.yml/badge.svg)
 ---
 
 ## 📊 GitHub Actions Badge
 
-You can add this badge to your `README.md` to show the status of the daily workflow:
-
-```markdown
-![Daily Folder](https://github.com/sberaconnects/devops-daily/actions/workflows/daily-folder.yml/badge.svg)
-```
-
----
 
 ## 📬 Optional: Weekly Digest (Manual Setup)
 
