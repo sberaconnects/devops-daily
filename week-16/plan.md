@@ -1,8 +1,11 @@
 # 📅 Week 16 DevOps Plan
 
-## 🎯 Focus Area: Infra as Code (IaC)
+## 🎯 Focus Area: GitHub Actions Mastery
 
-- ✅ Learn Terraform basics
-- ✅ Write infrastructure definitions for cloud VMs
+- ✅ Learn to trigger workflows from PRs
+- ✅ Create a CI pipeline for Docker builds
+- ✅ Use matrix builds to test multiple Python versions
+- ✅ Store secrets using GitHub’s encrypted secrets
+- ✅ Deploy a Docker image from CI to Docker Hub
 
-_Auto-generated on Mon Apr 14 04:40:53 UTC 2025_ with rotating themes.
+_This file was auto-generated on Mon Apr 14 04:41:41 UTC 2025_
