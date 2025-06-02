@@ -1,9 +1,11 @@
 # 📅 Week 23 DevOps Plan
 
-## 🎯 Focus Area: Kubernetes Basics
+## 🎯 Focus Area: GitHub Actions Mastery
 
-- ✅ Deploy to Minikube
-- ✅ Write a Helm chart
-- ✅ Use kubectl to manage pods
+- ✅ Learn to trigger workflows from PRs
+- ✅ Create a CI pipeline for Docker builds
+- ✅ Use matrix builds to test multiple Python versions
+- ✅ Store secrets using GitHub’s encrypted secrets
+- ✅ Deploy a Docker image from CI to Docker Hub
 
-_Auto-generated on Mon Jun  2 04:25:50 UTC 2025_ with rotating themes.
+_This file was auto-generated on Mon Jun  2 04:31:07 UTC 2025_
