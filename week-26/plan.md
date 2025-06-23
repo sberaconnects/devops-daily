@@ -1,9 +1,11 @@
 # 📅 Week 26 DevOps Plan
 
-## 🎯 Focus Area: GitHub Actions
+## 🎯 Focus Area: GitHub Actions Mastery
 
-- ✅ Create a CI pipeline
-- ✅ Trigger on push and pull_request
-- ✅ Use matrix builds
+- ✅ Learn to trigger workflows from PRs
+- ✅ Create a CI pipeline for Docker builds
+- ✅ Use matrix builds to test multiple Python versions
+- ✅ Store secrets using GitHub’s encrypted secrets
+- ✅ Deploy a Docker image from CI to Docker Hub
 
-_Auto-generated on Mon Jun 23 04:29:52 UTC 2025_ with rotating themes.
+_This file was auto-generated on Mon Jun 23 04:35:00 UTC 2025_
