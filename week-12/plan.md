@@ -1,9 +1,11 @@
 # 📅 Week 12 DevOps Plan
 
-## 🎯 Focus Area: Bash & Scripting
+## 🎯 Focus Area: GitHub Actions Mastery
 
-- ✅ Write scripts to automate daily tasks
-- ✅ Use cron jobs for scheduled execution
-- ✅ Parse logs and files with grep/sed/awk
+- ✅ Learn to trigger workflows from PRs
+- ✅ Create a CI pipeline for Docker builds
+- ✅ Use matrix builds to test multiple Python versions
+- ✅ Store secrets using GitHub’s encrypted secrets
+- ✅ Deploy a Docker image from CI to Docker Hub
 
-_Auto-generated on Mon Mar 16 05:46:20 UTC 2026_ with rotating themes.
+_This file was auto-generated on Mon Mar 16 05:49:17 UTC 2026_
