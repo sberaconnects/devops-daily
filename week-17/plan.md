@@ -1,11 +1,9 @@
 # 📅 Week 17 DevOps Plan
 
-## 🎯 Focus Area: GitHub Actions Mastery
+## 🎯 Focus Area: Kubernetes Basics
 
-- ✅ Learn to trigger workflows from PRs
-- ✅ Create a CI pipeline for Docker builds
-- ✅ Use matrix builds to test multiple Python versions
-- ✅ Store secrets using GitHub’s encrypted secrets
-- ✅ Deploy a Docker image from CI to Docker Hub
+- ✅ Deploy to Minikube
+- ✅ Write a Helm chart
+- ✅ Use kubectl to manage pods
 
-_This file was auto-generated on Mon Apr 21 04:43:09 UTC 2025_
+_Auto-generated on Mon Apr 20 06:10:51 UTC 2026_ with rotating themes.
