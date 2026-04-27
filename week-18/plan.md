@@ -1,11 +1,9 @@
 # 📅 Week 18 DevOps Plan
 
-## 🎯 Focus Area: GitHub Actions Mastery
+## 🎯 Focus Area: Bash & Scripting
 
-- ✅ Learn to trigger workflows from PRs
-- ✅ Create a CI pipeline for Docker builds
-- ✅ Use matrix builds to test multiple Python versions
-- ✅ Store secrets using GitHub’s encrypted secrets
-- ✅ Deploy a Docker image from CI to Docker Hub
+- ✅ Write scripts to automate daily tasks
+- ✅ Use cron jobs for scheduled execution
+- ✅ Parse logs and files with grep/sed/awk
 
-_This file was auto-generated on Mon Apr 28 04:44:58 UTC 2025_
+_Auto-generated on Mon Apr 27 06:23:49 UTC 2026_ with rotating themes.
