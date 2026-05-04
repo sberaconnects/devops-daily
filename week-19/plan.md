@@ -1,11 +1,9 @@
 # 📅 Week 19 DevOps Plan
 
-## 🎯 Focus Area: GitHub Actions Mastery
+## 🎯 Focus Area: Docker & Containers
 
-- ✅ Learn to trigger workflows from PRs
-- ✅ Create a CI pipeline for Docker builds
-- ✅ Use matrix builds to test multiple Python versions
-- ✅ Store secrets using GitHub’s encrypted secrets
-- ✅ Deploy a Docker image from CI to Docker Hub
+- ✅ Build and run Docker images
+- ✅ Use docker-compose for multi-service apps
+- ✅ Push an image to Docker Hub
 
-_This file was auto-generated on Mon May  5 04:25:23 UTC 2025_
+_Auto-generated on Mon May  4 06:34:50 UTC 2026_ with rotating themes.
