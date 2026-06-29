@@ -1,8 +1,11 @@
 # 📅 Week 27 DevOps Plan
 
-## 🎯 Focus Area: Monitoring & Logs
+## 🎯 Focus Area: GitHub Actions Mastery
 
-- ✅ Explore Prometheus + Grafana basics
-- ✅ Try Loki or ELK stack locally
+- ✅ Learn to trigger workflows from PRs
+- ✅ Create a CI pipeline for Docker builds
+- ✅ Use matrix builds to test multiple Python versions
+- ✅ Store secrets using GitHub’s encrypted secrets
+- ✅ Deploy a Docker image from CI to Docker Hub
 
-_Auto-generated on Mon Jun 29 08:53:23 UTC 2026_ with rotating themes.
+_This file was auto-generated on Mon Jun 29 08:59:33 UTC 2026_
