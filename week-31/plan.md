@@ -1,9 +1,11 @@
 # 📅 Week 31 DevOps Plan
 
-## 🎯 Focus Area: Docker & Containers
+## 🎯 Focus Area: GitHub Actions Mastery
 
-- ✅ Build and run Docker images
-- ✅ Use docker-compose for multi-service apps
-- ✅ Push an image to Docker Hub
+- ✅ Learn to trigger workflows from PRs
+- ✅ Create a CI pipeline for Docker builds
+- ✅ Use matrix builds to test multiple Python versions
+- ✅ Store secrets using GitHub’s encrypted secrets
+- ✅ Deploy a Docker image from CI to Docker Hub
 
-_Auto-generated on Mon Jul 27 06:57:13 UTC 2026_ with rotating themes.
+_This file was auto-generated on Mon Jul 27 07:33:35 UTC 2026_
