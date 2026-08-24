@@ -1,11 +1,9 @@
 # 📅 Week 35 DevOps Plan
 
-## 🎯 Focus Area: GitHub Actions Mastery
+## 🎯 Focus Area: Kubernetes Basics
 
-- ✅ Learn to trigger workflows from PRs
-- ✅ Create a CI pipeline for Docker builds
-- ✅ Use matrix builds to test multiple Python versions
-- ✅ Store secrets using GitHub’s encrypted secrets
-- ✅ Deploy a Docker image from CI to Docker Hub
+- ✅ Deploy to Minikube
+- ✅ Write a Helm chart
+- ✅ Use kubectl to manage pods
 
-_This file was auto-generated on Mon Aug 25 04:28:17 UTC 2025_
+_Auto-generated on Mon Aug 24 04:38:12 UTC 2026_ with rotating themes.
